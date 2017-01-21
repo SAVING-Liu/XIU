@@ -60,10 +60,13 @@ body{
   background:url(../images/login_sprite.png) no-repeat -200px 0px;
 }
 .formbox-1{
-  width:302px;height:250px;position:absolute;top:0px;left:59px;
+  width:302px;height:250px;position:absolute;top:0;left:59px;
 }
 .formbox-1 li:nth-child(1){
   padding-top:5px;height:20px;line-height:20px;
+}
+.formbox-1 li:nth-child(1) span,i{
+  display:none;
 }
 .formbox-1 li:nth-child(2) input{
   height:34px;width:290px;border:1px solid #d8d8d8;color:#afafaf;
@@ -72,6 +75,7 @@ body{
 .formbox-1 li:nth-child(3){
   height:20px;line-height:20px;
 }
+.formbox-1 li:nth-child(3) span{display:none;}
 .formbox-1 li:nth-child(4){
   width:302px;height:36px;
 }
@@ -92,8 +96,28 @@ body{
   background:url(../images/login_sprite.png) no-repeat -180px 7px;
 }
 .formbox-1 li:nth-child(5) span{
-   color:#000;
- }
+  color:#000;position:relative;
+}
+.formbox-1 li:nth-child(5) i{
+  position:absolute;top:12px;left:37px;
+  padding-left:12px;padding-top:7px;z-index:10;
+  background: url("../images/regist_01.png") no-repeat -12px -50px;
+  display:none;
+}
+.formbox-1 li:nth-child(5) p{
+  color:#de6907;
+  position:absolute;top:18px;left:-16px;
+  width:242px;height:18px;line-height:18px;
+  padding-left:4px;
+  background:#fffcd1;border:1px solid #f1d47c;
+  display:none;
+}
+.formbox-1 li:nth-child(5) span:hover i{
+  display:block;
+}
+.formbox-1 li:nth-child(5) span:hover p{
+  display:block;
+}
 .formbox-1 li:nth-child(5) a{
   margin-left:140px;
 }
@@ -109,6 +133,75 @@ body{
   background:url(../images/login_sprite.png) no-repeat 0px -40px;
 }
 .formbox-1 li:nth-child(6):hover input{
+  background:url(../images/login_sprite.png) no-repeat 0px -90px;
+}
+/*短信登陆 end*/
+.formbox-2{
+  width:302px;height:250px;position:absolute;top:0;left:59px;
+  z-index:10;display:none;
+}
+.formbox-2 li:nth-child(1){
+  padding-top:5px;height:20px;line-height:20px;
+}
+.formbox-2 li:nth-child(1) span{display:none;}
+.formbox-2 li:nth-child(2) input{
+  height:34px;width:290px;border:1px solid #d8d8d8;color:#afafaf;
+  padding-left:10px;
+}
+.formbox-2 li:nth-child(3){
+  height:20px;line-height:20px;
+}
+.formbox-2 li:nth-child(3) span{display:none;}
+.formbox-2 li:nth-child(4) input{
+  height:34px;width:290px;border:1px solid #d8d8d8;color:#afafaf;
+  padding-left:10px;
+}
+
+.formbox-2 li:nth-child(5){
+  width:302px;height:16px;line-height:16px;padding:26px 0px;
+}
+.formbox-2 li:nth-child(5) em{
+  padding:8px;
+  background:url(../images/login_sprite.png) no-repeat -180px 7px;
+}
+.formbox-2 li:nth-child(5) span{
+  color:#000;position:relative;
+}
+.formbox-2 li:nth-child(5) i{
+  position:absolute;top:12px;left:37px;
+  padding-left:12px;padding-top:7px;z-index:10;
+  background: url("../images/regist_01.png") no-repeat -12px -50px;
+  display:none;
+}
+.formbox-2 li:nth-child(5) p{
+  color:#de6907;
+  position:absolute;top:18px;left:-16px;
+  width:242px;height:18px;line-height:18px;
+  padding-left:4px;
+  background:#fffcd1;border:1px solid #f1d47c;
+  display:none;
+}
+.formbox-2 li:nth-child(5) span:hover i{
+  display:block;
+}
+.formbox-2 li:nth-child(5) span:hover p{
+  display:block;
+}
+.formbox-2 li:nth-child(5) a:nth-of-type(1){
+  margin-left:73px;
+}
+.formbox-2 li:nth-child(5) a:hover{
+  text-decoration:underline;
+}
+.formbox-2 li:nth-child(6){
+  width:302px;height:40px;margin-bottom:25px;
+}
+.formbox-2 li:nth-child(6) input{
+  cursor:pointer;
+  color:#fff;width:300px;height:40px;border:0;margin-left:1px;
+  background:url(../images/login_sprite.png) no-repeat 0px -40px;
+}
+.formbox-2 li:nth-child(6):hover input{
   background:url(../images/login_sprite.png) no-repeat 0px -90px;
 }
 /*form end*/
@@ -158,7 +251,7 @@ body{
 /*login-logo end*/
 /*二维码页面 begin*/
 .code-page{
-  width:420px;height:450px;background:#f00;
+  width:420px;height:400px;background:#fff;
   position:absolute;top:0;left:0;
   font-size:14px;
   display:none;
