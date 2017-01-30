@@ -317,3 +317,45 @@ body{
 .column_box .item_two li a:hover{
   transform:translateY(-8px);
 }
+/*一楼、二楼 end*/
+.goodswrap{
+  background: #7a1616;padding-top: 20px;
+}
+.goodsbox{
+  width: 1212px;margin: 0 auto;background: none;
+}
+.goodsbox .item_three{
+  width: 1211px;padding: 12px 0 0 0;
+  overflow: hidden;margin-top: -10px;
+}
+.goodsbox .item_three li{
+  float: left;width: 393px;margin: 0 10px 10px 0;
+}
+.goodsbox .item_three li a{
+  display: block;width: 393px;
+  transition: all .5s;
+  -webkit-transition: all .5s;
+}
+.goodsbox .item_three li a:hover{
+  transform:translateY(-8px);
+}
+.goodsbox .item_two{
+  width: 1212px;
+  padding: 15px 0 0 0;
+  overflow: hidden;
+  margin-top: -15px;
+}
+.goodsbox .item_two li{
+  float: left;
+  width: 594px;
+  margin: 0 12px 10px 0;
+}
+.goodsbox .item_two li a{
+  display: block;
+  width: 594px;
+  transition: all .5s;
+  -webkit-transition: all .5s;
+}
+.goodsbox .item_two li a:hover{
+  transform:translateY(-8px);
+}
