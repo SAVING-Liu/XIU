@@ -236,6 +236,7 @@ body{
   overflow: hidden;
   background: url(../images/body_bg.jpg) center top repeat;
 }
+.main h3 img{vertical-align:middle;}
 .bg1{
   background:url(../images/top_01.jpg) no-repeat center top;
   height: 162px;
@@ -340,10 +341,10 @@ body{
   transform:translateY(-8px);
 }
 .goodsbox .item_two{
-  width: 1212px;
-  padding: 15px 0 0 0;
-  overflow: hidden;
-  margin-top: -15px;
+  width:1212px;
+  padding:15px 0 0 0;
+  overflow:hidden;
+  margin-top:-15px;
 }
 .goodsbox .item_two li{
   float: left;
