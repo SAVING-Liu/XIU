@@ -16,5 +16,13 @@
     "gulp-htmlmin": "^3.0.0",
     "gulp-imagemin": "^3.1.1"
   },
-  "description": ""
+  "description": ">项目任务：走秀网",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SAVING-Liu/holiday_work.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SAVING-Liu/holiday_work/issues"
+  },
+  "homepage": "https://github.com/SAVING-Liu/holiday_work#readme"
 }
