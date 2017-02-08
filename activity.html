@@ -1,10 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="myApp">
 <head>
     <meta charset="UTF-8">
     <title>【走秀网官网】简约风衣 -国际品牌 新先高品质</title>
     <link rel="stylesheet" href="css/activity.css"/>
     <script src="js/lib/jquery/jquery-1.12.4.js"></script>
+
+    <script src="js/lib/angular/angular.min.js"></script>
+    <!--Eunne-->
+    <script src="js/app/modules/Eunne/eunne.module.js"></script>
+    <script src="js/app/modules/Eunne/eunne.component.js"></script>
+    <!--Shezglobal-->
+    <script src="js/app/modules/Shezglobal/shezglobal.module.js"></script>
+    <script src="js/app/modules/Shezglobal/shezglobal.component.js"></script>
+    <!--Lavidione-->
+    <script src="js/app/modules/Lavidione/lavidione.module.js"></script>
+    <script src="js/app/modules/Lavidione/lavidione.component.js"></script>
+    <!--AEannelog-->
+    <script src="js/app/modules/AEannelog/aeannelog.module.js"></script>
+    <script src="js/app/modules/AEannelog/aeannelog.component.js"></script>
+    <!--Fagire-->
+    <script src="js/app/modules/Fagire/fagire.module.js"></script>
+    <script src="js/app/modules/Fagire/fagire.component.js"></script>
+    <!--Marc-->
+    <script src="js/app/modules/Marc/marc.module.js"></script>
+    <script src="js/app/modules/Marc/marc.component.js"></script>
     <script src="js/app/activity.js"></script>
 </head>
 <body>
@@ -26,40 +46,35 @@
     </div>
     <!--blackNav end-->
     <!--楼层开始-->
-    <div class="xs-mainsection">
-        <div class="xs-title">
-            <p><a href="#">更多</a></p>
-            <span></span>
-            <strong>Eunne</strong>
+    <div class="Eunne">
+        <eunne-component></eunne-component>
+    </div>
+    <div class="Shezglobal">
+        <shezglobal-component></shezglobal-component>
+    </div>
+    <div class="Lavidione">
+        <lavidione-component></lavidione-component>
+    </div>
+    <div class="AEannelog">
+        <aeannelog-component></aeannelog-component>
+    </div>
+    <div class="Fagire">
+        <fagire-component></fagire-component>
+    </div>
+    <div class="Marc">
+        <marc-component></marc-component>
+    </div>
+    <div class="otherbox">
+        <div class="tit">
+            <h2><img src="images/tit_other.gif" alt=""/></h2>
+            <span><a href="#">查看所有优惠活动>></a></span>
         </div>
-        <div style="height:1px;"></div>
-        <div class="xs-section">
-            <div class="item-box">
-                <ul>
-                    <li class="item">
-                        <ol style="list-style:none;">
-                            <li class="pic">
-                                <a href="#"><img src="images/g1_234_312.jpg" alt=""></a>
-                                <div class="sold-size">
-                                    <p>可售尺码：</p>
-                                    <ul class="sold-size-list">
-                                        <li>S</li>
-                                        <li>XL</li>
-                                        <li>L</li>
-                                        <li>M</li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="txt"><a href="#">女士经典挺括棉A字型显瘦中袖黑色外套 </a></li>
-                            <li class="price">
-                                <span>699</span>
-                            </li>
-                        </ol>
-                    </li>
-                </ul>
-            </div>
+        <div class="other-pic">
+
         </div>
     </div>
 </div>
+<!--bg end-->
+<footer></footer>
 </body>
 </html>

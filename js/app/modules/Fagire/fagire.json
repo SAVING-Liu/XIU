@@ -1,0 +1,71 @@
+[
+  {
+    "gimg":"images/g1_234_312(44).jpg",
+    "txt":"女士加绒时尚牛仔风衣 ",
+    "price":"794",
+    "size1":"S",
+    "size2":"M"
+  },
+  {
+    "gimg":"images/g1_234_312(45).jpg",
+    "txt":"女士英伦风麂皮绒翻领风衣 ",
+    "price":"872",
+    "size1":"S",
+    "size2":"M",
+    "size3":"L",
+    "size4":"XL"
+  },
+  {
+    "gimg":"images/g1_234_312(46).jpg",
+    "txt":"女士秋冬新款刺绣长款风衣 ",
+    "price":"872",
+    "size2":"M",
+    "size3":"L",
+    "size4":"XL"
+  },
+  {
+    "gimg":"images/g1_234_312(47).jpg",
+    "txt":"女士灯芯绒纯色连帽风衣 ",
+    "price":"876",
+    "size1":"S",
+    "size2":"M",
+    "size3":"L"
+  },
+  {
+    "gimg":"images/g1_234_312(48).jpg",
+    "txt":"女士英伦风格纹中长款风衣 ",
+    "price":"922",
+    "size1":"S",
+    "size2":"M",
+    "size3":"L",
+    "size4":"XL"
+  },
+  {
+    "gimg":"images/g1_234_312(49).jpg",
+    "txt":"女士罗马棉大翻领长款风衣 ",
+    "price":"984",
+    "size1":"S",
+    "size2":"M",
+    "size3":"L",
+    "size4":"XL"
+  },
+  {
+    "gimg":"images/g1_234_312(50).jpg",
+    "txt":"女士长款时尚修身风衣 ",
+    "price":"988",
+    "size1":"S",
+    "size2":"M",
+    "size3":"L",
+    "size4":"XL"
+  },
+  {
+    "gimg":"images/g1_234_312(51).jpg",
+    "txt":"女士喇叭花贴绣鹿皮绒风衣 ",
+    "price":"995",
+    "gimg2":"images/ysw.png",
+    "size1":"S",
+    "size2":"M",
+    "size3":"L",
+    "size4":"XL"
+  }
+]

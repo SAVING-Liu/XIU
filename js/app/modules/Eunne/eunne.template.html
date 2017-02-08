@@ -1,0 +1,34 @@
+<div class="xs-mainsection">
+    <div class="xs-title">
+        <p><a href="#">更多</a></p>
+        <span></span>
+        <strong>Eunne</strong>
+    </div>
+    <div style="height:1px;"></div>
+    <div class="xs-section">
+        <div class="item-box">
+            <ul>
+                <li class="item" ng-repeat="res in $ctrl.reslist">
+                    <ol>
+                        <li class="pic">
+                            <a href="#"><img ng-src={{res.gimg}} alt=""></a>
+                            <div class="sold-size">
+                                <p>可售尺码：</p>
+                                <ul class="sold-size-list">
+                                    <li>{{res.size1}}</li>
+                                    <li>{{res.size2}}</li>
+                                    <li>{{res.size3}}</li>
+                                    <li>{{res.size4}}</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="txt"><a href="#">{{res.txt}} </a></li>
+                        <li class="price">
+                            <span>{{res.price}}</span>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
