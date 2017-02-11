@@ -55,10 +55,33 @@ $(function(){
         $("#bigView").hide();
     })
 })
-
+//图片加载gif
 $(function(){
-    //图片加载gif
    setTimeout(function(){
         $("#imgLoading").css("display","none");
     },1000)
+})
+/*选项卡*/
+$(function(){
+    $(".changeC").click(function(){
+        //nav 点击时，背景和字体颜色变换
+        $(".changeC a").removeClass("changeC_on");
+        $(".changeC a").eq($(this).index()).addClass("changeC_on");
+        //选项卡
+        $(".d-options>div").hide();
+        $(".d-options>div").eq($(this).index()).show();
+        var $height = $(".d-options>div").eq($(this).index()).outerHeight();
+        $(".d-options").css("height",$height);
+    });
+})
+
+
+
+
+
+
+
+/*底部加载*/
+$(function(){
+    $("footer").load("footer.html");
 })
