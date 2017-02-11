@@ -73,7 +73,22 @@ $(function(){
         var $height = $(".d-options>div").eq($(this).index()).outerHeight();
         $(".d-options").css("height",$height);
     });
+    $(window).scroll(function(){
+        var $top = $(window).scrollTop();
+        if($top>742){
+            $(".message_nav").css({
+                position:"fixed",
+                top:"45px",
+                zIndex:"100"
+            })
+        }else{
+            $(".message_nav").css({
+                position:"static"
+            })
+        }
+    })
 })
+angular.module("myApp",["r_right"]);
 
 
 

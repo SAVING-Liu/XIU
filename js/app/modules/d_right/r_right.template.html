@@ -1,0 +1,10 @@
+<div class="d-right">
+    <h2>你最近浏览的商品</h2>
+    <div class="r_picture" ng-repeat="res in $ctrl.reslist">
+        <dl>
+            <dt><a href="#"><img ng-src={{res.gimg}} alt=""/></a></dt>
+            <dd class="r_name" ng-title={{res.title}}>{{res.title}}</dd>
+            <dd class="r_descript"><a href="#">{{res.name}}</a></dd>
+        </dl>
+    </div>
+</div>

@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="myApp">
 <head>
     <meta charset="UTF-8">
     <title>【Aspinal of london 042-0997_14200000】艾丝彼纳手提包-女士真皮贝壳手提包-走秀网</title>
     <link rel="stylesheet" href="css/detail.css"/>
     <script src="js/lib/jquery/jquery-1.12.4.js"></script>
+    <script src="js/lib/angular/angular.min.js"></script>
+
+    <script src="js/app/modules/d_right/r_right.module.js"></script>
+    <script src="js/app/modules/d_right/r_right.component.js"></script>
     <script src="js/app/detail.js"></script>
 </head>
 <body>
@@ -159,11 +163,12 @@
     <div class="d-options">
         <div class="d-opt d-optfirst">
             <div class="d-left">
-
+                <h2>商品属性</h2>
+                <table>
+                    <tr></tr>
+                </table>
             </div>
-            <div class="d-right">
-
-            </div>
+            <right-component></right-component>
         </div>
         <div class="d-opt">
             <div class="d-left">
@@ -174,17 +179,13 @@
             <div class="d-left">
                 <img src="images/0207goods_a1.jpg" alt="">
             </div>
-            <div class="d-right">
-
-            </div>
+            <right-component></right-component>
         </div>
         <div class="d-opt">
             <div class="d-left">
                 <img src="images/0207goods_a2.jpg" alt="">
             </div>
-            <div class="d-right">
-
-            </div>
+            <right-component></right-component>
         </div>
     </div>
     <!--选项卡 end-->

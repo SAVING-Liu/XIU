@@ -54,7 +54,7 @@ body{
 #bpic-list .bpic{display:block;}
 #bigView{
   overflow: hidden;
-  z-index: 100;
+  z-index:10;
   top: 0px;
   position: absolute;
   width: 402px;
@@ -350,28 +350,47 @@ body{
 .cp_bags a:hover{background: url(../images/goods_info.gif) no-repeat left -1466px;}
 /*message_nav end*/
 .d-options{
-  width:1000px;overflow:hidden;position:relative;
-  height:1000px;
+  width:1000px;overflow:hidden;position:relative;height:1000px;
 }
 .d-opt{
   width:1000px;position:absolute;top:0;left:0;display:none;
+  padding-top:5px;
 }
 .d-opt:after{
   content:".";height:0;clear:both;display:block;
   overflow:hidden;visibility:hidden;
 }
 .d-optfirst{display:block;}
-.d-left{width:755px;float:left;}
-.contents{
-  padding: 5px 0 15px 0;
-  width: 774px;
-  line-height: 22px;
-  overflow: hidden;
-  color: #646464;
+.d-left{width:775px;float:left;overflow:hidden;}
+.d-left h2{
+  height: 25px;line-height: 25px;
+  padding: 0 0 0 16px;font-size: 14px;
+  background: #f3f3f3;color: #333;
+  margin: 20px 0;width: 757px;
 }
 
 
 
 
 
-.d-right{width:100px;height:500px;float:right;background:#0ff;}
+.d-right{padding:1px;border:1px solid #dfdfdf;float:right;background:#fff;}
+.d-right h2{
+  width:196px;padding-left:10px;
+  height:26px;line-height:26px;background:#f0f0f0;margin-bottom:15px;
+}
+.r_picture{
+  width:195px;height:120px;color:#666;
+}
+.r_picture dt{
+  float: left;margin: 0 8px 0 3px;
+  height: 106px;width: 79px;
+}
+.r_picture .r_name{
+  height: 18px;width: 95px;
+  overflow: hidden;text-overflow: ellipsis;white-space: nowrap;
+}
+.r_picture .r_descript{
+  width: 100px;height:70px;
+  overflow: hidden;
+  line-height: 18px;
+}

@@ -17,7 +17,7 @@ $(function(){
         });*/
         if($top>136){
             $(".top-downbg").css({
-                background:"rgba(3,3,3,0.9)",
+                background:"rgba(3,3,3,0.8)",
                 position:"fixed",
                 top:0,
                 zIndex:99
