@@ -73,12 +73,13 @@ $(function(){
         var $height = $(".d-options>div").eq($(this).index()).outerHeight();
         $(".d-options").css("height",$height);
     });
+    //吸顶菜单
     $(window).scroll(function(){
         var $top = $(window).scrollTop();
         if($top>742){
             $(".message_nav").css({
                 position:"fixed",
-                top:"45px",
+                top:"50px",
                 zIndex:"100"
             })
         }else{
@@ -87,6 +88,22 @@ $(function(){
             })
         }
     })
+    //图片加载
+    var _imgLoad =[
+        {gimg:"images/e0.jpg"},
+        {gimg:"images/e1.jpg"},
+        {gimg:"images/e2.jpg"},
+        {gimg:"images/e3.jpg"}
+    ];
+    function loadImg(){
+        $.each(_imgLoad,function(index,value){
+            console.log(value);
+            var $img = $("<img>").attr("src",value.gimg);
+            $(".conlist").append($img);
+        })
+    }
+    loadImg(_imgLoad);
+    $(".d-options").css("height",$(".d-optfirst").outerHeight())
 })
 angular.module("myApp",["r_right"]);
 

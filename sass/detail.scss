@@ -350,7 +350,7 @@ body{
 .cp_bags a:hover{background: url(../images/goods_info.gif) no-repeat left -1466px;}
 /*message_nav end*/
 .d-options{
-  width:1000px;overflow:hidden;position:relative;height:1000px;
+  width:1000px;overflow:hidden;position:relative;
 }
 .d-opt{
   width:1000px;position:absolute;top:0;left:0;display:none;
@@ -368,8 +368,35 @@ body{
   background: #f3f3f3;color: #333;
   margin: 20px 0;width: 757px;
 }
-
-
+.property table{border:0;border-collapse:collapse;width:100%;}
+.property table td{
+  width:32%;
+  height: 30px;
+  line-height: 20px;
+  padding-left: 10px;
+  border: 1px solid #ebebeb;
+}
+.wx_tips{
+  border-top: 1px solid #e5e5e5;
+  padding: 10px 0px 15px 0px;
+  margin: 15px 0px;
+}
+.wx_tips>strong{
+  display: block;
+  color: #ea7514;
+  font-size: 14px;
+}
+.wx_tips>p{
+  color: #555;
+  line-height: 20px;
+  padding-top: 5px;
+}
+.tips_menu{
+  width: 100%;
+  height: 133px;
+  background: #fff;
+  margin-top: 20px;
+}
 
 
 
