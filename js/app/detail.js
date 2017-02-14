@@ -95,13 +95,62 @@ $(function(){
         {gimg:"images/e2.jpg"},
         {gimg:"images/e3.jpg"}
     ];
-    function loadImg(){
-        $.each(_imgLoad,function(index,value){
-            var $img = $("<img>").attr("src",value.gimg);
-            $(".conlist").append($img);
-        })
+    var _fashion = [
+        {gimg:"images/sx1.jpg"},
+        {gimg:"images/sx2.jpg"},
+        {gimg:"images/sx3.jpg"},
+        {gimg:"images/sx4.jpg"},
+        {gimg:"images/sx5.jpg"},
+        {gimg:"images/sx6.jpg"},
+        {gimg:"images/sx7.jpg"}
+    ]
+   var _ensure = [
+        {gimg:"images/zp1.jpg"},
+        {gimg:"images/zp2.jpg"},
+        {gimg:"images/zp4.jpg"},
+        {gimg:"images/zp5.jpg"},
+        {gimg:"images/zp6.jpg"},
+        {gimg:"images/zp7.jpg"},
+        {gimg:"images/zp8.jpg"},
+        {gimg:"images/zp9.jpg"},
+        {gimg:"images/zp10.jpg"}
+    ]
+    var _serve = [
+        {gimg:"images/kf1.jpg"},
+        {gimg:"images/kf2.jpg"}
+    ]
+    //封装函数
+    function loadPic(_array,conClass){
+        function loadImg(){
+            $.each(_array,function(index,value){
+                var $img = $("<img>").attr("src",value.gimg);
+                $(conClass).append($img);
+            })
+        }
+        loadImg(_array);
     }
-    loadImg(_imgLoad);
+    loadPic(_imgLoad,".conlist");
+    loadPic(_fashion,".fashion");
+    loadPic(_ensure,".zp_ensure");
+    loadPic(_serve,".serve");
+    //选项卡
+    //hover 变换背景
+    $(".zp").hover(function(){
+        $(this).css({
+            backgroundPosition:(0-130*($(this).index()))+"px"+" -133px"
+        });
+    },function(){
+        $(".zp").eq($(this).index()).css({
+            backgroundPosition:(0-130*($(this).index()))+"px"+" 0px"
+        })
+    })
+    //li.zp  hover 对应的div出现
+    $(".zp").on("mouseenter",function(){
+        $(".zp_cons>div").hide();
+        $(".zp_cons>div").eq($(this).index()).show();
+        var _height = $(".zp_cons>div").eq($(this).index()).outerHeight();
+        $(".zp_cons").css("height",_height);
+    });
 })
 angular.module("myApp",["r_right"]);
 

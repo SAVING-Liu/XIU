@@ -397,6 +397,43 @@ body{
   background: #fff;
   margin-top: 20px;
 }
+.tips_menu li{
+  float: left;
+  display: block;
+  width: 129px;
+  height: 133px;
+  cursor: pointer;
+  margin: 0 48px;
+  background: url(../images/xq_btn.jpg) no-repeat;
+}
+
+.tips_menu li a{
+  display: block;
+  width: 129px;
+  height: 133px;
+  margin: 0 48px;
+}
+.tips_menu li.zp_1{
+  background-position:0 -133px;
+}
+.tips_menu li.zp_2{
+  background-position:-130px 0;
+}
+.tips_menu li.zp_3{
+  background-position:-260px 0;
+}
+.zp_cons{background:#f3f3f3;}
+.zp_cons:after{
+  content:".";height:0;display:block;clear:both;
+  overflow:hidden;visibility:hidden;
+}
+.zp_cons>div{
+  text-align: center;
+  padding: 20px 0;
+  display:none;
+}
+.zp_cons img{display:block;}
+.zp_cons>div:nth-of-type(1){display:block;}
 
 
 
