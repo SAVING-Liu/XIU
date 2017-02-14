@@ -97,13 +97,11 @@ $(function(){
     ];
     function loadImg(){
         $.each(_imgLoad,function(index,value){
-            console.log(value);
             var $img = $("<img>").attr("src",value.gimg);
             $(".conlist").append($img);
         })
     }
     loadImg(_imgLoad);
-    $(".d-options").css("height",$(".d-optfirst").outerHeight())
 })
 angular.module("myApp",["r_right"]);
 
