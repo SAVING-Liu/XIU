@@ -3,7 +3,7 @@
  */
 /*头部 加载*/
 $(function(){
-    $("header").load("header.html");
+    //$("header").load("header.html");
 })
 
 $(function(){
@@ -70,8 +70,6 @@ $(function(){
         //选项卡
         $(".d-options>div").hide();
         $(".d-options>div").eq($(this).index()).show();
-        var $height = $(".d-options>div").eq($(this).index()).outerHeight();
-        $(".d-options").css("height",$height);
     });
     //吸顶菜单
     $(window).scroll(function(){
@@ -79,7 +77,7 @@ $(function(){
         if($top>742){
             $(".message_nav").css({
                 position:"fixed",
-                top:"50px",
+                top:0,
                 zIndex:"100"
             })
         }else{
@@ -133,6 +131,7 @@ $(function(){
     loadPic(_fashion,".fashion");
     loadPic(_ensure,".zp_ensure");
     loadPic(_serve,".serve");
+
     //选项卡
     //hover 变换背景
     $(".zp").hover(function(){
@@ -150,17 +149,29 @@ $(function(){
         $(".zp_cons>div").eq($(this).index()).show();
         var _height = $(".zp_cons>div").eq($(this).index()).outerHeight();
         $(".zp_cons").css("height",_height);
+        $(".d-options .zx_ensure").css("height",_height);
     });
 })
 angular.module("myApp",["r_right"]);
-
-
-
-
-
-
-
 /*底部加载*/
 $(function(){
     $("footer").load("footer.html");
+    /*右侧边栏*/
+    $(".changebg").eq(3).on("click",function(){
+        $("html,body").stop().animate({scrollTop:0},500);
+    })
+    //点击span div消失
+    $(".closemenu").on("click",function(){
+        $("#backtop").css("display","none");
+    })
+    //hover 变换背景
+    $(".changebg").hover(function(){
+        $(this).css({
+            backgroundPosition:"-68px "+(-1-58*($(this).index()-1))+"px"
+        })
+    },function(){
+        $(this).css({
+            backgroundPosition:"0px "+(-1-58*($(this).index()-1))+"px"
+        })
+    })
 })
