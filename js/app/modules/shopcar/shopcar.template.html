@@ -1,0 +1,65 @@
+<div>
+    <table>
+        <tr>
+            <th width="80">
+                <label style="padding:0 0 0 10px;">
+                    <input type="checkbox" checked="true"/> 全选
+                </label>
+            </th>
+            <th colspan="2">商品</th>
+            <th width="120">购买价（元）</th>
+            <th width="130">小计（元）</th>
+            <th width="130">数量</th>
+            <th width="130">操作</th>
+        </tr>
+        <tr class="shoppings" ng-repeat="res in $ctrl.reslist">
+            <td class="checbox"><input type="checkbox"/></td>
+            <td class="tx_img">
+                <a href="#"><img ng-src={{res.gimg}} alt=""/></a>
+            </td>
+            <td class="txt">
+                <ul>
+                    <li>{{res.txt1}}</li>
+                    <li><a href="#">{{res.txt2}}</a></li>
+                    <li>
+                        {{res.txt3}}
+                    </li>
+                </ul>
+            </td>
+            <td class="price">￥{{res.price}}</td>
+            <td class="total" >￥{{clickMe*res.price}}</td>
+            <td class="tx_num">
+                <span ng-click="clickMe=clickMe-1" class="at">-</span>
+                <input ng-init="clickMe=1" ng-model="clickMe" type="text"/>
+                <span ng-click="clickMe=clickMe+1" class="at">+</span>
+                <span class="number"></span>
+            </td>
+            <td class="opt">
+                <span><a href="#">移动至收藏</a></span><br/>
+                <span class="delShop"><a href="#">删除</a></span>
+            </td>
+        </tr>
+    </table>
+    <div class="carbar">
+        <div class="car_wrap">
+            <div class="checall">
+                <label>
+                    <input type="checkbox"/> 全选
+                </label>
+            </div>
+            <div class="chec_opt">
+                <a href="#">删除</a>
+                <a href="#">消除失效商品</a>
+                <a href="#">移至收藏夹</a>
+            </div>
+            <div class="car_total">
+                已选商品 <b id="amount_num">2</b> 件
+            </div>
+            <div class="totally">
+                总计（<span>不含运费</span>）：
+                <span class="amout">￥ <span id="amount_total">29600</span></span>
+            </div>
+            <input class="jieSuan" type="text"/>
+        </div>
+    </div>
+</div>

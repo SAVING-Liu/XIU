@@ -22,7 +22,7 @@
 					<div class="top-up-left">
 						<ul class="top-nav">
 							<li><a href="login.html" title="登录/注册">登录/注册</a></li>
-							<li class="my_bag"><a href="#">购物袋<span class="numadd" ng-bind="clickThis" ng-model="clickThis"></span>件</a>
+							<li class="my_bag" ng-ctroller="myCtrl0" ng-init="clickThis=0"><a href="#">购物袋<span class="numadd" ng-bind="clickThis"></span>件</a>
 								<div class="bag">
 									<span>购物袋暂时没有商品!</span>
 								</div>
@@ -32,7 +32,7 @@
 									<a href="#">我的订单</a>
 									<a href="#">自助退货</a>
 									<a href="#">我的收藏</a>
-									<a href="#">帮助中心</a>
+									<a href="help">帮助中心</a>
 									<a href="#">全部吐槽</a>
 								</div>
 							</li>
@@ -1294,8 +1294,8 @@
 						</div>
 						<div class="d-num">
 							<div> 数&nbsp;&nbsp;量：</div>
-							<div>
-								<span ng-click="clickMe = clickMe - 1" class="down"></span><input ng-bind="clickMe" ng-model="clickMe" type="text" value="1"/><span ng-click="clickMe = clickMe + 1" class="up"></span>
+							<div ng-ctroller="myCtrl" ng-init="clickMe=1">
+								<span ng-click="clickMe = clickMe - 1" class="down"></span><input ng-model="clickMe" type="text" value="1"/><span ng-click="clickMe = clickMe + 1" class="up"></span>
 								<span class="rest">仅剩<b>2</b>件，再不下手后悔一辈子！</span>
 							</div>
 						</div>
@@ -1325,12 +1325,12 @@
 						</div>
 						<script>
 							var app = angular.module("myApp",[]);
-							/*app.controller("myCtrl",function($scope){
-								$scope.clickMe = 1;
+							app.controller("myCtrl",function($scope){
+								//$scope.clickMe = 0;
 							});
 							app.controller("myCtrl0",function($scope){
-								$scope.clickThis = 1;
-							})*/
+								//$scope.clickThis = 1;
+							})
 						</script>
 						<div class="callbuy">
 							电话订购：<strong>400-888-4499</strong>&nbsp;<span>（08:00-24:00）</span>
@@ -1471,7 +1471,7 @@
 			<div class="backmenu">
 				<span class="closemenu">关闭</span>
 				<a class="changebg" href="#"></a>
-				<a class="changebg" href="#"></a>
+				<a class="changebg" href="goodscar.html"></a>
 				<a class="changebg" href="#"></a>
 				<a class="changebg" href="#"></a>
 			</div>

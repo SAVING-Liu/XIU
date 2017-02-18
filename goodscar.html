@@ -1,10 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="myApp">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>我的购物袋-走秀网-全球品牌网络旗舰店：正品，支持货到付款，7天无条件退换货保障！</title>
+    <link rel="stylesheet" href="css/goodscar.css"/>
+    <script src="js/lib/jquery/jquery-1.12.4.js"></script>
+    <script src="js/lib/angular/angular.min.js"></script>
+    <script src="js/app/modules/shopcar/shopcar.module.js"></script>
+    <script src="js/app/modules/shopcar/shopcar.component.js"></script>
+    <script src="js/app/shopcar.js"></script>
 </head>
 <body>
-
+<div class="top">
+    <h1><a href="#" title="走秀网 全球时尚 正品保证">走秀网<b></b></a></h1>
+    <div class="top_r">
+        <p>
+            客服热线(免长途费)：
+            <b>400-888-4499</b>
+            <a href="javascript:void(0)" title="在线客服">在线客服</a>
+        </p>
+        <p>
+            <span>您好!欢迎光临走秀网!<a href="#" title="登录/注册"> [ 登录/注册 ] </a></span>|
+            <a href="#">帮助中心</a>
+        </p>
+    </div>
+</div>
+<!--top end-->
+<div class="goods_nav">
+    <div class="nav_list">
+        <ul>
+            <li>1.我的购物袋<span></span></li>
+            <li>2.填写并核对订单信息<span></span></li>
+            <li>3.成功提交订单<span></span></li>
+        </ul>
+    </div>
+</div>
+<!--goods_nav end-->
+<div class="goods_main">
+    <shopcar-component></shopcar-component>
+    <div class="interest">
+        <div class="set_bar">
+            <h2><a class="collect" href="#"><b></b>看看您收藏的商品：</a></h2>
+            <h2 class="c_login">请<a href="#">登录</a>后查看您收藏的商品</h2>
+        </div>
+    </div>
+</div>
+<!--goods_main end-->
+<div class="bottom">
+    <p>
+        Copyright © 2008-2017<a href="#"> Xiu.com</a>深圳走秀网络科技有限公司 版权所有 .<a href="#"> 粤ICP备07502993号</a>
+    </p>
+</div>
+<!--bottom end-->
 </body>
 </html>
