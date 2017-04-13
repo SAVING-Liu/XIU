@@ -1,2 +1,2 @@
 # XIU
-## jquery project by lf
+## Jquery+angularJS project by lf
